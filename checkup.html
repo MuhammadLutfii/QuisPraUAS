@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<title>Portal COVID-19</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <a href="1.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-home w3-large"></i>
+    <p>HOME</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="1.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+
+  </div>
+</div>
+<div class="w3-padding-large" id="main">
+<!--Checkup-->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="4">
+    <h2 class="w3-text-light-grey">Checkup</h2>
+    <hr style="width:200px" class="w3-opacity">
+ <font color="Black" face="TimesNewRoman" align="center" Size="6">
+		<div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+	<p><b>Self Checkup COVID-19</p></b></font>
+		<p>Silahkan menjawab pertanyaan-pertanyaan berikut ini dengan benar sesuai dengan kondisi fisik Anda saat ini.</p>
+		</div>
+		
+<!--Form-->
+<html>
+<head>
+<title>Formulir</title>
+<script LANGUAGE="JAVASCRIPT">
+	function ValidasiForm()
+		{if (document.FormTamu.nama.value=="") { alert("Kolom Nama Tidak Boleh Kosong"); return false;}
+		if (document.FormTamu.umur.value=="") { alert("Kolom Umur Tidak Boleh Kosong"); return false;}
+		if (document.FormTamu.email.value=="") { alert("Kolom Email Tidak Boleh Kosong"); return false;}
+		if (document.FormTamu.alamat.value==""){ alert("Kolom Alamat Tidak Boleh Kosong"); return false;}}
+
+</script>
+</head>
+<body>
+<div class="w3-row w3-padding-16 w3-section w3-light-grey">
+<p><b>Form Self Checkup COVID-19</b></p>
+<form  onSubmit="return ValidasiForm()" name="FormTamu" method="post" action="">
+<form method="POST" Action=" " name="form_kursus">
+	<table width="100%">
+	<tr>
+	
+		<td>Nama</td>
+		<td>:</td>
+		<td><Input type="text" name="nama" id="nama"size="39"></td>
+	</tr>
+	<tr>
+		<td>Jenis Kelamin</td>
+		<td>:</td>
+		<td><Input type="radio" value="L" name="jkl"> Laki-laki
+		<input type="radio" name="jkl" value="p">Perempuan</td>
+	</tr>
+	<tr>
+		<td>Umur</td>
+		<td>:</td>
+		<td><Input type="text" name="umur" id="umur" size="39"></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td>:</td>
+		<td><Input type="text" name="email" id="email" size="39"></td>
+	</tr>
+	<tr>
+		<td>Alamat</td>
+		<td>:</td>
+		<td><Input type="text" name="alamat" id="alamat" size="39"></td>
+	</tr>
+	<tr>
+		<td>Propinsi</td>
+		<td>:</td>
+		<td><select size="I" name="propinsi">
+			<option>Aceh</option>
+			<option>Sumatra Utara</option>
+			<option>Sumatra Barat</option>
+			<option>Riau</option>
+			<option>Kepulauan Riau</option>
+			<option>Jambi</option>
+			<option>Bengkulu</option>
+			<option>Sumatra Selatan</option>
+			<option>Kepulauan bangka Belitung</option>
+			<option>Lampung</option>
+			<option>Banten</option>
+			<option>Jawa Barat</option>
+			<option>Jakarta</option>
+			<option>Jawa tengah</option>
+			<option>Yogyakarta</option>
+			<option>Jawa Timur</option>
+			<option>Bali</option>
+			<option>Nusa Tenggara Barat</option>
+			<option>Nusa Tenggara Timur</option>
+			<option>Kalimantan Barat</option>
+			<option>Kalimantan Selatan</option>
+			<option>Kalimantan Tengah</option>
+			<option>Kalimantan Timur</option>
+			<option>Kalimantan Utara</option>
+			<option>Gorontalo</option>
+			<option>Sulawesi Barat</option>
+			<option>Sulawesi Selatan</option>
+			<option>Sulawesi Tengah</option>
+			<option>Sulawesi Utara</option>
+			<option>Maluku</option>
+			<option>Maluku Utara</option>
+			<option>Papua Barat</option>
+			<option>Papua</option>
+			</select></td>
+	</tr>
+	<tr>
+		<td>1. Apakah Anda Keluar Rumah?</td>
+		<td>:</td>
+		<td><Input type="radio" name="1" value="YA">YA
+			<Input type="radio" name="1" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>2. Apakah Anda Menggunakan Transportasi Publik?</td>
+		<td>:</td>
+		<td><Input type="radio" name="2" value="YA">YA
+			<Input type="radio"	name="2" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>3. Apakah Anda Menggunakan Masker Saat Keluar Rumah?</td>
+		<td>:</td>
+		<td><Input type="radio" name="3" value="YA">YA
+			<Input type="radio" name="3" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>4. Apakah Anda Berjabat Tangan Dengan Orang Lain?</td>
+		<td>:</td>
+		<td><Input type="radio" name="4" value="YA">YA
+			<Input type="radio" name="4" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>5. Apakah Anda Menggunakan Hand Sanitizer?</td>
+		<td>:</td>
+		<td><Input type="radio" name="5" value="YA">YA
+			<Input type="radio" name="5" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>6. Apakah Anda Menyentuh Benda Yang Orang Lain Sentuh?</td>
+		<td>:</td>
+		<td><Input type="radio" name="6" value="YA">YA
+			<Input type="radio" name="6" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>7. Apakah Anda Menjaga Jarak 1Meter Dengan Orang Lain?</td>
+		<td>:</td>
+		<td><Input type="radio" name="7" value="YA">YA
+			<Input type="radio" name="7" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>8. Apakah Anda Tinggal Di Kota/Kab Yang Terdapat Pasien COVUID-19?</td>
+		<td>:</td>
+		<td><Input type="radio" name="8" value="YA">YA
+			<Input type="radio" name="8" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>9. Apakah Kediaman Anda Sudah Disterilkan Dengan Desinfektan?</td>
+		<td>:</td>
+		<td><Input type="radio" name="9" value="YA">YA
+			<Input type="radio" name="9" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>10. Apakah Anda Menyediakan Hand Sanitizer Di Rumah?</td>
+		<td>:</td>
+		<td><Input type="radio" name="10" value="YA">YA
+			<Input type="radio" name="10" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>11. Apakah Anda Mengkonsumsi Vitamin Tambahan Untuk Meningkatkan Daya Tahan Tubuh?</td>
+		<td>:</td>
+		<td><Input type="radio" name="11" value="YA">YA
+			<Input type="radio" name="11" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>12. Hari Ini,Sudakah Anda Terkena Sinar Matahari Langsung,Minimal 15 Menit</td>
+		<td>:</td>
+		<td><Input type="radio" name="12" value="YA">YA
+			<Input type="radio" name="12" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>13. Apakah Anda Memiliki Riwayat Penyakit jantung,Diabetes,atau Gangguan Pernafasan?</td>
+		<td>:</td>
+		<td><Input type="radio" name="13" value="YA">YA
+			<Input type="radio" name="13" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>14. Apakah Anda Sudah Melakukan Pengecekan COVID-19 Sebelumnya?</td>
+		<td>:</td>
+		<td><Input type="radio" name="14" value="YA">YA
+			<Input type="radio" name="14" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>15. Anda Berusia 60 Tahun Keatas?</td>
+		<td>:</td>
+		<td><Input type="radio" name="15" value="YA">YA
+			<Input type="radio" name="15" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>16. Apakah Anda mengalami salah satu dari hal berikut:Kesulitan bernafas yang parah (Bernafas dengan sangat cepat atau berbicara dalam satu kata),
+			Nyeri dada yang parah,
+			Sulit untuk bangun,
+			Merasa kebingungan,
+			Penurunan kesadaran</td>
+		<td>:</td>
+		<td><Input type="radio" name="16" value="YA">YA
+			<Input type="radio" name="16" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>17. Apakah Anda mengalami salah satu dari hal berikut:
+		Nafas yang pendek saat istirahat,
+		Ketidakmampuan untuk berbaring karena kesulitan bernafas,
+		Kondisi kesehatan kronis yang anda alami dirasakan lebih berat karena kesulitan bernapas</td>
+		<td>:</td>
+		<td><Input type="radio" name="17" value="YA">YA
+			<Input type="radio" name="17" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>18. Apakah Anda mengalami salah satu dari hal berikut:
+		Demam,
+		Batuk,
+		Bersin,
+		Sakit Tenggorokan,
+		Sulit Bernafas</td>
+		<td>:</td>
+		<td><Input type="radio" name="18" value="YA">YA
+			<Input type="radio" name="18" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>19. Apakah anda pernah muncul gejala sekitar 14 hari setelah travelling ke luar negeri? 
+		(China, Italy, Iran, Korea Selatan, Prancis, Spanyol, Jerman, USA) atau ke kota terjangkit 
+		(Jakarta, Bali, Solo, Yogyakarta, Pontianak, Manado, Bandung dll)?</td>
+		<td>:</td>
+		<td><Input type="radio" name="19" value="YA">YA
+			<Input type="radio" name="19" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>20. Apakah Anda memberikan perawatan atau melakukan kontak dekat dengan seseorang 
+		dengan COVID-19 (kemungkinan atau dikonfirmasi) saat mereka sakit (batuk, demam, bersin, 
+		atau sakit tenggorokan)?</td>
+		<td>:</td>
+		<td><Input type="radio" name="20" value="YA">YA
+			<Input type="radio" name="20" value="TIDAK">TIDAK</td>
+	</tr>
+	
+	<tr>
+		<td>21. Apakah Anda memiliki kontak dekat dengan seseorang yang bepergian ke luar 
+		Negeri dalam 14 hari terakhir yang menjadi sakit (batuk, demam, bersin, atau sakit 
+		tenggorokan)?</td>
+		<td>:</td>
+		<td><Input type="radio" name="21" value="YA">YA
+			<Input type="radio" name="21" value="TIDAK">TIDAK</td>
+	</tr>
+	</div>
+	
+	
+	
+	</table>
+		<p><button onclick="alert('Anda Sudah Melakukan Self Checkup COVID-19,Hasil Test Akan Kami Kirim Melalui Email Yang Sudah Anda Masukan.Terimakasih Dan Selalu Tetap Jaga Kesehatan.')">Submit</button>
+			<input type="Reset" value="Reset" name="BReset"></p>
+	</form>
+	</form>
+	</body>
+	</html>
